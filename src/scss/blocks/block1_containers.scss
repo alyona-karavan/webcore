@@ -1,0 +1,57 @@
+body {
+  background-color: #f8f8f8;
+  font-family: 'TT Lakes Regular';
+  color: #1b1c21;
+  box-sizing: border-box;
+  @media (min-width: 1440px) {
+    background-color: #ffffff;
+  }
+}
+.wrapper {
+  margin: 0 auto;
+  min-width: 320px;
+  position: relative;
+
+  @media (min-width: 768px) {
+    min-width: 768px;
+    z-index: 1;
+  }
+
+  @media (min-width: 1440px) {
+    width: 1120px;
+    margin: 0;
+    background-color: #f8f8f8;
+  }
+}
+
+.container-all {
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    flex-shrink: 0;
+    display: none;
+  }
+
+  @media (min-width: 320px) {
+    min-width: 320px;
+  }
+  @media (min-width: 360px) {
+    min-width: 360px;
+  }
+
+  @media (min-width: 768px) {
+    min-width: 768px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 1440px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    background-color: #ffffff;
+  }
+}

@@ -1,0 +1,160 @@
+.main {
+  &__list-buttons {
+    overflow-x: scroll;
+    display: flex;
+    margin: 0;
+    padding: 0 16px 0 16px;
+    align-items: center;
+
+    &::-webkit-scrollbar {
+      flex-shrink: 0;
+      display: none;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      width: 24px;
+      height: 40px;
+      background: linear-gradient(to right, transparent, #f8f8f8);
+      z-index: 1;
+    }
+    @media (min-width: 1440px) {
+      flex-wrap: wrap;
+      margin: -20px 0 25px 32px;
+      padding: 0;
+      align-items: baseline;
+      &::after {
+        display: none;
+      }
+    }
+
+    & .button {
+      width: max-content;
+      border: transparent solid 2px;
+      background-color: #f8f8f8;
+      padding: 6px 17px 6px 14px;
+      margin: 0px;
+      line-height: 24px;
+      font-family: 'TT Lakes Medium';
+      font-size: 16px;
+      color: #7e7e82;
+      letter-spacing: -0.2px;
+
+      &:focus {
+        background-color: #ffffff;
+        border: #b8ffec solid 2px;
+        border-radius: 6px;
+      }
+      @media (min-width: 768px) {
+        margin: 0px 0px 4px 0px;
+        padding: 6px 17px 6px 14px;
+      }
+      @media (min-width: 1440px) {
+        padding: 8px 21px;
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  & .description {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    margin: 24px 0px 0 0px;
+    @media (min-width: 768px) {
+      display: flex;
+      margin: 24px 20px 0 8px;
+      justify-content: space-between;
+    }
+    @media (min-width: 1440px) {
+      display: flex;
+      justify-content: space-between;
+      margin-top: -15px;
+      margin-left: 19px;
+      margin-bottom: 51px;
+    }
+  }
+  & .container {
+    margin: 0 16px 0 16px;
+    @media (min-width: 768px) {
+      margin: 0 0px 0 16px;
+      display: flex;
+      flex-direction: column;
+      max-height: 208px;
+    }
+    @media (min-width: 1440px) {
+      width: 510px;
+    }
+  }
+  &__description {
+    @media (min-width: 768px) {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+      margin: 3px 0px 0 0px;
+    }
+  }
+  &__description-tablet {
+    @media (max-width: 767px) {
+      display: none;
+    }
+    @media (min-width: 768px) {
+      margin: 20px 0px 0 0px;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+    }
+    @media (min-width: 1440px) {
+      margin: 18px 0 0 0px;
+    }
+  }
+  &__description-desktop {
+    @media (max-width: 1439px) {
+      display: none;
+    }
+  }
+  &__more {
+    font-family: 'TT Lakes Medium';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    margin: 14px 15px 15px 32px;
+    &::before {
+      content: url('../img/logo/ic/expand.png');
+      position: absolute;
+      left: 16px;
+      @media (min-width: 768px) {
+        left: 25px;
+      }
+      @media (min-width: 1440px) {
+        left: 32px;
+      }
+    }
+    @media (min-width: 768px) {
+      margin: 9px 15px 15px 34px;
+    }
+    @media (min-width: 1440px) {
+      margin-top: 13px;
+      margin-left: 29px;
+    }
+  }
+  &__image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+    @media (min-width: 768px) {
+      margin-left: 50px;
+      min-width: 360px;
+      min-height: 208px;
+      margin-bottom: 24px;
+      border-radius: 10px 0 0 10px;
+    }
+    @media (min-width: 1440px) {
+      margin: -8px 0 0 0;
+      width: 540px;
+      height: 307px;
+      border-radius: 10px 0 0 10px;
+    }
+  }
+}

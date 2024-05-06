@@ -1,17 +1,15 @@
-$bgColor: #24292e;
-$text: #fff;
+@import 'nullstyle';
+@import 'stylesheet';
 
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
+@import 'swiper-bundle.min';
 
-body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
-}
+@import 'block1_containers';
+@import 'block2_header';
+@import 'block3_main';
+@import 'block4_slider';
+@import 'block5_brands';
+// @import 'block';
+// @import 'block';
+// @import 'block';
+// @import 'block';
+// @import 'block';
